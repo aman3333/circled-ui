@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build --outDir build",
-    "build:prod": "vite build --mode prod --outDir build",
-    "build:dev": "vite build --mode dev --outDir build",
+    "build:prod": "NODE_OPTIONS='--max-old-space-size=1024' vite build --mode prod --outDir build",
+    "build:dev": "NODE_OPTIONS='--max-old-space-size=1024' vite build --mode dev --outDir build",
     "lint": "eslint .",
     "preview": "vite preview --port 3000"
   },
